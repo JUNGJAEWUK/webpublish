@@ -1,0 +1,84 @@
+@charset "UTF-8";
+.wave {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.wave {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.type {
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+  z-index: 97;
+  width: 70%;
+}
+#animatingStr {
+  color: #fff;
+  font-size: 2.5em;
+  line-height: 80px;
+  text-align: center;
+  display: block;
+}
+#animatingStr em {
+  font-weight: bold;
+  font-style: normal;
+  color: #ffa31b;
+}
+.type a {
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  transform: translateX(-50%);
+  width: 150px;
+  line-height: 50px;
+  border-radius: 5px;
+  border: 1px solid rgb(221, 221, 221);
+  text-align: center;
+  font-size: 1em;
+  font-weight: 300;
+  cursor: pointer;
+  text-transform: uppercase;
+  background-color: #fff;
+  transition: box-shadow 0.5s, color 1s;
+}
+.type a:hover {
+  color: #fff;
+  box-shadow: -85px 0 0 0 inset #ffa31b, 85px 0 0 0 inset #ffa31b;
+}
+
+/* responsive */
+@media screen and (max-width: 1240px) {
+  .type {
+    width: 80%;
+  }
+  #animatingStr {
+    font-size: 3.333vw;
+    line-height: 7vw;
+  }
+}
+@media screen and (max-width: 640px) {
+  .type {
+    width: 100%;
+  }
+  #animatingStr {
+    font-size: 3.9vw;
+  }
+  .type a {
+    width: 120px;
+    line-height: 35px;
+    font-size: 2.7vw;
+  }
+}
+@media screen and (max-width: 480px) {
+  #animatingStr {
+    font-size: 4.3vw;
+  }
+  .type a {
+    font-size: 14px;
+  }
+}
